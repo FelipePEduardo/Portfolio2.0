@@ -1,0 +1,42 @@
+import styled from 'styled-components'
+
+export const ProjetcsContainer = styled.section`
+  width: 100%;
+  max-width: 112rem;
+  padding: 0 2.5rem;
+  margin: 12rem auto 20rem;
+`
+
+export const ProjetcsContent = styled.section`
+  display: flex;
+  flex-direction: column;
+
+  width: 76rem;
+  margin: 0 auto;
+
+  > div:first-child {
+    background-image: linear-gradient(60deg, #f2555a, #d49ef5);
+    background-clip: text;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  > p {
+    color: ${(props) => props.theme['gray-300']};
+
+    margin-bottom: 3rem;
+  }
+
+  > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+`
