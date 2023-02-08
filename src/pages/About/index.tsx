@@ -5,8 +5,12 @@ import {
   AboutMeContainer,
 } from './styles'
 import myImage2 from '../../assets/Felipe.jpeg'
+import { useContext } from 'react'
+import { ProfileContext } from '../../contexts/ProfileContext'
 
 export function About() {
+  const { user } = useContext(ProfileContext)
+
   return (
     <AboutContainer>
       <AboutContent>
@@ -38,10 +42,7 @@ export function About() {
         <h2>Bio</h2>
 
         <div>
-          <blockquote>
-            Desenvolvedor Front-End React no caminho para o primeiro trabalho na
-            área! Estudante do Ignite na Rocketseat.
-          </blockquote>
+          <blockquote>{user.bio}</blockquote>
         </div>
       </AboutContent>
     </AboutContainer>

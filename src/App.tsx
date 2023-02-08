@@ -4,6 +4,7 @@ import { defaultTheme } from './styles/themes/default'
 
 import { BrowserRouter } from 'react-router-dom'
 import { Router } from './Router'
+import { ProfileContextProvider } from './contexts/ProfileContext'
 
 export function App() {
   return (
@@ -11,7 +12,9 @@ export function App() {
       <GlobalStyle />
 
       <BrowserRouter>
-        <Router />
+        <ProfileContextProvider>
+          <Router />
+        </ProfileContextProvider>
       </BrowserRouter>
     </ThemeProvider>
   )

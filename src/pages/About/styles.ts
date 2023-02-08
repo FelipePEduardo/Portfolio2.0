@@ -23,8 +23,13 @@ export const AboutContent = styled.div`
   }
 
   blockquote {
+    max-width: 50rem;
+
+    padding-left: 1.5rem;
+
     font-style: italic;
     color: ${(props) => props.theme['gray-500']};
+    line-height: 1.4;
   }
 `
 

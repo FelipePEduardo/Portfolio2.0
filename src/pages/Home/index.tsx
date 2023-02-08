@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import { ProfileContext } from '../../contexts/ProfileContext'
 import {
   HomeContainer,
   HomeContent,
@@ -6,11 +8,13 @@ import {
 } from './styles'
 
 export function Home() {
+  const { user } = useContext(ProfileContext)
+
   return (
     <HomeContainer>
       <HomeContent>
         <ImageContainer>
-          <img src="https://github.com/FelipePEduardo.png" alt="" />
+          <img src={`${user.html_url}.png`} alt="" />
         </ImageContainer>
 
         <TextContainer>
