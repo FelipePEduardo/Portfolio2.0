@@ -1,4 +1,5 @@
 import { createContext, ReactNode, useEffect, useState } from 'react'
+import { api } from '../lib/axios'
 
 interface userProps {
   html_url: string
@@ -22,11 +23,9 @@ export function ProfileContextProvider({
 
   useEffect(() => {
     const fetchApi = async () => {
-      const response = await fetch(
-        'https://api.github.com/users/FelipePEduardo',
-      )
-      const data = await response.json()
-      setUser(data)
+      const response = await api.get('')
+
+      setUser(response.data)
     }
 
     fetchApi()

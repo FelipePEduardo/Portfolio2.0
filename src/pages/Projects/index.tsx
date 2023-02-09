@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { api } from '../../lib/axios'
 import { Project } from './components/project'
 import { ProjetcsContainer, ProjetcsContent } from './styles'
 
@@ -15,11 +16,9 @@ export function Projects() {
   )
 
   async function repositories() {
-    const response = await fetch(
-      'https://api.github.com/users/FelipePEduardo/repos?sort=pushed&per_page=8',
-    )
-    const data = await response.json()
-    setRepositoriesList(data)
+    const response = await api.get('repos?sort=pushed&per_page=8')
+
+    setRepositoriesList(response.data)
   }
 
   useEffect(() => {
