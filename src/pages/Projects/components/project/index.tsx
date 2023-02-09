@@ -1,14 +1,19 @@
 import { ProjectContainer } from './styles'
 
-export function Project() {
+interface onRespositoryProps {
+  onRespository: {
+    name: string
+    description: string
+    html_url: string
+  }
+}
+
+export function Project({ onRespository }: onRespositoryProps) {
   return (
-    <ProjectContainer href="">
+    <ProjectContainer href={onRespository.html_url} target="_blank">
       <div>
-        <h4>Projeto 1</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus sed perspiciatis corporis atque.{' '}
-        </p>
+        <h4>{onRespository.name}</h4>
+        <p>{onRespository.description}</p>
       </div>
     </ProjectContainer>
   )

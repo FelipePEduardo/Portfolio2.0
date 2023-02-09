@@ -5,6 +5,7 @@ import { About } from './pages/About'
 
 import { Home } from './pages/Home'
 import { Projects } from './pages/Projects'
+import { Skills } from './pages/Skills'
 
 export function Router() {
   return (
@@ -14,6 +15,7 @@ export function Router() {
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<About />} />
           <Route path="/projetos" element={<Projects />} />
+          <Route path="/habilidades" element={<Skills />} />
         </Route>
       </Route>
     </Routes>

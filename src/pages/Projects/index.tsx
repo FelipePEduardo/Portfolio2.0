@@ -1,7 +1,31 @@
+import { useEffect, useState } from 'react'
 import { Project } from './components/project'
 import { ProjetcsContainer, ProjetcsContent } from './styles'
 
+interface repositoriesList {
+  id: number
+  name: string
+  description: string
+  html_url: string
+}
+
 export function Projects() {
+  const [repositoriesList, setRepositoriesList] = useState<repositoriesList[]>(
+    [],
+  )
+
+  async function repositories() {
+    const response = await fetch(
+      'https://api.github.com/users/FelipePEduardo/repos?sort=pushed&per_page=8',
+    )
+    const data = await response.json()
+    setRepositoriesList(data)
+  }
+
+  useEffect(() => {
+    repositories()
+  }, [])
+
   return (
     <ProjetcsContainer>
       <ProjetcsContent>
@@ -14,12 +38,9 @@ export function Projects() {
         </p>
 
         <div>
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
+          {repositoriesList.map((respository) => {
+            return <Project key={respository.id} onRespository={respository} />
+          })}
         </div>
       </ProjetcsContent>
     </ProjetcsContainer>

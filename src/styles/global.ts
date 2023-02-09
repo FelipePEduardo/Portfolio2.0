@@ -38,7 +38,7 @@ export const GlobalStyle = createGlobalStyle`
   body::-webkit-scrollbar-track-piece  { /* 4 */ }
 
   body::-webkit-scrollbar-thumb { 
-    background: /* ${(props) => props.theme.purple}; */#CE9AF4;
+    background: ${(props) => props.theme['pink-200']} ;
     border-radius: 3px;
     cursor: move;
   }

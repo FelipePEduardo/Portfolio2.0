@@ -11,12 +11,6 @@ export const AboutContent = styled.div`
   max-width: 76rem;
   margin: 0 auto;
 
-  /* > div:first-child {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  } */
-
   > h2 {
     margin-top: 4rem;
     margin-bottom: 1.5rem;

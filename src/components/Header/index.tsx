@@ -12,7 +12,7 @@ export function Header() {
             <NavLink to="/sobre">Sobre</NavLink>
           </li>
           <li>
-            <NavLink to="">Habilidades</NavLink>
+            <NavLink to="/habilidades">Habilidades</NavLink>
           </li>
           <li>
             <NavLink to="/projetos">Projetos</NavLink>
