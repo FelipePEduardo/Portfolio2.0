@@ -11,6 +11,12 @@ export const HomeContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  gap: 5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const ImageContainer = styled.div`

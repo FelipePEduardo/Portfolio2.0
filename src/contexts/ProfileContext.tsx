@@ -27,7 +27,6 @@ export function ProfileContextProvider({
       )
       const data = await response.json()
       setUser(data)
-      console.log(data)
     }
 
     fetchApi()

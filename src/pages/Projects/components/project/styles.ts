@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const ProjectContainer = styled.a`
+  width: 19rem;
+
   position: relative;
   padding: 2rem;
 
@@ -42,5 +44,13 @@ export const ProjectContainer = styled.a`
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.04);
+    }
   }
 `

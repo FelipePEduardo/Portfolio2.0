@@ -34,4 +34,14 @@ export const LinkContainer = styled.a`
       opacity: 1;
     }
   }
+
+  @media (max-width: 768px) {
+    span:first-child {
+      display: none;
+    }
+
+    svg {
+      opacity: 1;
+    }
+  }
 `

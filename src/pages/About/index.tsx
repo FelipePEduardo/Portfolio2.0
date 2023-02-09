@@ -1,8 +1,9 @@
 import {
   AboutContainer,
   AboutContent,
+  BackgroundTitle,
   ImageAboutContainer,
-  AboutMeContainer,
+  InfoContainer,
 } from './styles'
 import myImage2 from '../../assets/Felipe.jpeg'
 import { useContext } from 'react'
@@ -15,14 +16,14 @@ export function About() {
     <AboutContainer>
       <AboutContent>
         <div>
-          <ImageAboutContainer>
-            <img src={myImage2} alt="" />
-          </ImageAboutContainer>
+          <BackgroundTitle>
+            <h1>Sobre mim</h1>
+          </BackgroundTitle>
 
-          <AboutMeContainer>
-            <div>
-              <h1>Sobre mim</h1>
-            </div>
+          <InfoContainer>
+            <ImageAboutContainer>
+              <img src={myImage2} alt="" />
+            </ImageAboutContainer>
 
             <p>
               Me chamo <em>Felipe Pereira Eduardo</em> , tenho 21 anos e moro em
@@ -36,7 +37,7 @@ export function About() {
               <strong>Desenvolvimento Front-End</strong> com <em>ReactJS</em> .
               Busco me tornar um desenvolvedor Full-Stack.
             </p>
-          </AboutMeContainer>
+          </InfoContainer>
         </div>
 
         <h2>Bio</h2>

@@ -21,7 +21,7 @@ export function Footer() {
             href="https://www.instagram.com/feh_eduardoo/"
             target="_blank"
           >
-            instagram
+            <span>instagram</span>
             <span>
               <FontAwesomeIcon icon={faInstagram} />
             </span>
@@ -29,7 +29,7 @@ export function Footer() {
         </li>
         <li>
           <LinkContainer href={user.html_url} target="_blank">
-            github
+            <span>github</span>
             <span>
               <FontAwesomeIcon icon={faGithub} />
             </span>
@@ -40,7 +40,7 @@ export function Footer() {
             href="https://www.linkedin.com/in/felipepereiraeduardo/"
             target="_blank"
           >
-            linkedin
+            <span>linkedin</span>
             <span>
               <FontAwesomeIcon icon={faLinkedin} />
             </span>
@@ -51,7 +51,7 @@ export function Footer() {
             href="https://app.rocketseat.com.br/me/felipe-pereira-eduardo-00732"
             target="_blank"
           >
-            rocketseat
+            <span>rocketseat</span>
             <span>
               <FontAwesomeIcon icon={faRocket} />
             </span>

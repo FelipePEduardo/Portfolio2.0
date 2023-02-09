@@ -7,11 +7,11 @@ export const ProjetcsContainer = styled.section`
   margin: 12rem auto 20rem;
 `
 
-export const ProjetcsContent = styled.section`
+export const ProjetcsContent = styled.div`
   display: flex;
   flex-direction: column;
 
-  width: 76rem;
+  max-width: 76rem;
   margin: 0 auto;
 
   > div:first-child {
@@ -38,5 +38,17 @@ export const ProjetcsContent = styled.section`
   > div:last-child {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 850px) {
+    > div:last-child {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    > div:last-child {
+      grid-template-columns: none;
+    }
   }
 `

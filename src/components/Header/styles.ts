@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
   margin: 0 auto;
 `
 
-export const HeaderContent = styled.header`
+export const HeaderContent = styled.div`
   background: ${(props) => props.theme['purple-800']};
   padding: 4rem 8rem;
   border-radius: 2.4rem;
@@ -38,6 +38,29 @@ export const HeaderContent = styled.header`
         &:hover {
           color: ${(props) => props.theme['gray-200']};
           transition: 0.2s;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 2rem 0;
+
+    > a {
+      font-size: 2.8rem;
+    }
+
+    > ul {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      li {
+        a {
+          font-size: 1.3rem;
         }
       }
     }

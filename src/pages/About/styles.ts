@@ -11,11 +11,11 @@ export const AboutContent = styled.div`
   max-width: 76rem;
   margin: 0 auto;
 
-  > div:first-child {
+  /* > div:first-child {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+  } */
 
   > h2 {
     margin-top: 4rem;
@@ -31,38 +31,42 @@ export const AboutContent = styled.div`
     color: ${(props) => props.theme['gray-500']};
     line-height: 1.4;
   }
-`
 
-export const ImageAboutContainer = styled.div`
-  max-width: 30rem;
+  @media (max-width: 768px) {
+    text-align: center;
 
-  img {
-    width: 100%;
-    border-radius: 8px;
-  }
-`
-
-export const AboutMeContainer = styled.div`
-  width: 41rem;
-
-  > div {
-    background-image: linear-gradient(60deg, #80ffea, #d49ef5);
-    background-clip: text;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-
-    h1 {
-      text-align: center;
-      font-size: 3.2rem;
-
-      margin-bottom: 2rem;
+    blockquote {
+      max-width: none;
     }
   }
+`
+
+export const BackgroundTitle = styled.div`
+  background-image: linear-gradient(60deg, #80ffea, #d49ef5);
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+
+  h1 {
+    text-align: center;
+    font-size: 3.2rem;
+
+    margin-bottom: 4rem;
+  }
+`
+
+export const InfoContainer = styled.div`
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 5rem;
 
   p {
+    max-width: 37rem;
     color: ${(props) => props.theme['gray-500']};
     line-height: 1.6;
 
@@ -73,5 +77,18 @@ export const AboutMeContainer = styled.div`
     strong {
       color: ${(props) => props.theme.purple};
     }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
+export const ImageAboutContainer = styled.div`
+  max-width: 30rem;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
   }
 `
