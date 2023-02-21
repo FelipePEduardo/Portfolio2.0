@@ -14,8 +14,7 @@ Esse é o portfólio 2.0! Projeto pessoal do meu portfólio desenvolvido para mo
 
 Nesse projeto utilizei:
 Figma { 
-  - Fiz alguns layouts da aplicação para ter mais ideias e testar coisas
-  https://www.figma.com/file/byGx2DaKTgmr3oZYEjuAKT/Portf%C3%B3lio?node-id=3%3A17&t=51WKUZnir1QMfytr-1
+  - Fiz alguns layouts da aplicação para ter mais ideias e testar coisas [Figma](https://www.figma.com/file/byGx2DaKTgmr3oZYEjuAKT/Portf%C3%B3lio?node-id=3%3A17&t=51WKUZnir1QMfytr-1)  
 }
 
 React hooks { 
@@ -25,11 +24,10 @@ React hooks {
 }
 
 Axios { 
-  - Biblioteca de requisições
-  https://axios-http.com/ptbr/docs/intro
+  - Biblioteca de requisições [axios](https://axios-http.com/ptbr/docs/intro) 
 }
 
 ## 🔗 Links
 
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://felipepeduardodev.netlify.app/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://felipepeduardodev.netlify.app)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/felipepereiraeduardo/)
