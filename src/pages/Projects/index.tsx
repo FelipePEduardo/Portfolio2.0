@@ -16,7 +16,13 @@ export function Projects() {
   )
 
   async function repositories() {
-    const response = await api.get('repos?sort=pushed&per_page=8')
+    /* repos?sort=pushed&per_page=8 */
+    const response = await api.get('repos', {
+      params: {
+        sort: 'pushed',
+        per_page: 8,
+      },
+    })
 
     setRepositoriesList(response.data)
   }
