@@ -17,7 +17,7 @@ export function Skills() {
         </div>
         <p>
           Estes são os cursos que fiz. Em 2022 foi o ano que comecei minha
-          jornada no Explorer e atualmente estou no Ignite!
+          jornada no Explorer e atualmente estou focado no Ignite!
         </p>
         <div>
           <Courses />
@@ -29,8 +29,8 @@ export function Skills() {
           <h2>Habilidades</h2>
         </div>
         <p>
-          Essas são algumas das habilidades que aprendendo e desenvolvendo nos
-          meu projetos mais recentes.
+          Essas são algumas das habilidades que venho aprendendo e desenvolvendo
+          nos meu projetos mais recentes.
         </p>
         <SkillsContent>
           {skills.map((skill) => {
