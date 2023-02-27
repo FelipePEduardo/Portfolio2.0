@@ -12,7 +12,7 @@ export const ProjectContainer = styled.a`
   transition: 0.7s;
 
   h4 {
-    color: ${(props) => props.theme['gray-200']};
+    color: ${({ theme }) => theme['gray-100']};
     font-size: 1.8rem;
     font-weight: 400;
 
@@ -20,7 +20,7 @@ export const ProjectContainer = styled.a`
   }
 
   p {
-    color: ${(props) => props.theme['gray-500']};
+    color: ${({ theme }) => theme['gray-400']};
     line-height: 1.5;
   }
 

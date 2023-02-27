@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-export const AboutContainer = styled.section`
+export const AboutContainer = styled.main`
   width: 100%;
   max-width: 112rem;
   padding: 0 2.5rem;
   margin: 12rem auto 20rem;
 `
 
-export const AboutContent = styled.div`
+export const AboutContent = styled.section`
   max-width: 76rem;
   margin: 0 auto;
 
@@ -22,7 +22,7 @@ export const AboutContent = styled.div`
     padding-left: 1.5rem;
 
     font-style: italic;
-    color: ${(props) => props.theme['gray-500']};
+    color: ${({ theme }) => theme['gray-400']};
     line-height: 1.4;
   }
 
@@ -61,15 +61,15 @@ export const InfoContainer = styled.div`
 
   p {
     max-width: 37rem;
-    color: ${(props) => props.theme['gray-500']};
+    color: ${({ theme }) => theme['gray-400']};
     line-height: 1.6;
 
     em {
-      color: ${(props) => props.theme['gray-200']};
+      color: ${({ theme }) => theme['gray-100']};
     }
 
     strong {
-      color: ${(props) => props.theme.purple};
+      color: ${({ theme }) => theme['violet-600']};
     }
   }
 

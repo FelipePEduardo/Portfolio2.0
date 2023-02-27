@@ -1,11 +1,10 @@
 import { LinkContainer, ListContainer } from './styles'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons'
-import { faRocket } from '@fortawesome/free-solid-svg-icons'
+  LinkedInLogoIcon,
+  RocketIcon,
+  InstagramLogoIcon,
+  GitHubLogoIcon,
+} from '@radix-ui/react-icons'
 
 import { useContext } from 'react'
 import { ProfileContext } from '../../contexts/ProfileContext'
@@ -23,7 +22,7 @@ export function Footer() {
           >
             <span>instagram</span>
             <span>
-              <FontAwesomeIcon icon={faInstagram} />
+              <InstagramLogoIcon />
             </span>
           </LinkContainer>
         </li>
@@ -31,7 +30,7 @@ export function Footer() {
           <LinkContainer href={user.html_url} target="_blank">
             <span>github</span>
             <span>
-              <FontAwesomeIcon icon={faGithub} />
+              <GitHubLogoIcon />
             </span>
           </LinkContainer>
         </li>
@@ -42,7 +41,7 @@ export function Footer() {
           >
             <span>linkedin</span>
             <span>
-              <FontAwesomeIcon icon={faLinkedin} />
+              <LinkedInLogoIcon />
             </span>
           </LinkContainer>
         </li>
@@ -53,7 +52,7 @@ export function Footer() {
           >
             <span>rocketseat</span>
             <span>
-              <FontAwesomeIcon icon={faRocket} />
+              <RocketIcon />
             </span>
           </LinkContainer>
         </li>

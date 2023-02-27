@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const HomeContainer = styled.section`
+export const HomeContainer = styled.main`
   width: 100%;
   max-width: 112rem;
   padding: 0 2.5rem;
@@ -29,7 +29,7 @@ export const ImageContainer = styled.div`
   border-radius: 9999999px;
 
   padding: 2rem;
-  background: ${(props) => props.theme['purple-800']};
+  background: ${({ theme }) => theme['purple-dark-800']};
 
   img {
     width: 100%;
@@ -43,7 +43,7 @@ export const TextContainer = styled.div`
 
   span {
     font-size: 1.8rem;
-    color: ${(props) => props.theme['gray-500']};
+    color: ${({ theme }) => theme['gray-400']};
     margin-bottom: 0.8rem;
   }
 
@@ -58,7 +58,7 @@ export const TextContainer = styled.div`
 
     h1 {
       font-size: 4.8rem;
-      color: ${(props) => props.theme['gray-200']};
+      color: ${({ theme }) => theme['gray-200']};
     }
   }
 

@@ -12,8 +12,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme['purple-900']};
-    color: ${(props) => props.theme['gray-200']};   
+    background: ${({ theme }) => theme['purple-dark-900']};
+    color: ${({ theme }) => theme['gray-100']};   
   }
 
   body, input, text-area, button {
@@ -32,13 +32,13 @@ export const GlobalStyle = createGlobalStyle`
 
   body::-webkit-scrollbar-track {
     border: none;
-    background: ${(props) => props.theme['purple-800']};
+    background: ${({ theme }) => theme['purple-dark-800']};
   }
 
   body::-webkit-scrollbar-track-piece  { /* 4 */ }
 
   body::-webkit-scrollbar-thumb { 
-    background: ${(props) => props.theme['pink-200']} ;
+    background: ${({ theme }) => theme['pink-200']} ;
     border-radius: 3px;
     cursor: move;
   }

@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-export const ProjetcsContainer = styled.section`
+export const ProjetcsContainer = styled.main`
   width: 100%;
   max-width: 112rem;
   padding: 0 2.5rem;
   margin: 12rem auto 20rem;
 `
 
-export const ProjetcsContent = styled.div`
+export const ProjetcsContent = styled.section`
   display: flex;
   flex-direction: column;
 
@@ -30,7 +30,7 @@ export const ProjetcsContent = styled.div`
   }
 
   > p {
-    color: ${(props) => props.theme['gray-300']};
+    color: ${({ theme }) => theme['gray-100']};
 
     margin-bottom: 3rem;
   }

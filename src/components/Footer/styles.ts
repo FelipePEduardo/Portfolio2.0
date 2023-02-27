@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ListContainer = styled.div`
+export const ListContainer = styled.footer`
   width: 100%;
   max-width: 112rem;
   padding: 0 2.5rem;
@@ -19,14 +19,18 @@ export const LinkContainer = styled.a`
   align-items: center;
   gap: 0.5rem;
 
-  color: ${(props) => props.theme['gray-500']};
+  color: ${({ theme }) => theme['gray-400']};
+
+  span:last-child {
+    max-height: 1.5rem;
+  }
 
   svg {
     opacity: 0;
   }
 
   &:hover {
-    color: ${(props) => props.theme['gray-200']};
+    color: ${({ theme }) => theme['gray-100']};
     transition: 0.2s;
 
     svg {

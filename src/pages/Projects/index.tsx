@@ -38,8 +38,8 @@ export function Projects() {
           <h1>Projetos</h1>
         </div>
         <p>
-          Essa página lista os principais projetos que venho desenvolvendo
-          durante a minha jornada como programador.
+          Essa página lista os 8 principais projetos que venho desenvolvendo
+          durante a minha jornada como desenvolvedor.
         </p>
 
         <div>

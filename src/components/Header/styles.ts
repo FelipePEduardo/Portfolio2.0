@@ -8,9 +8,10 @@ export const HeaderContainer = styled.header`
 `
 
 export const HeaderContent = styled.div`
-  background: ${(props) => props.theme['purple-800']};
+  background: ${({ theme }) => theme['purple-dark-800']};
   padding: 4rem 8rem;
   border-radius: 2.4rem;
+  border: 2px solid ${({ theme }) => theme['purple-dark-700']};
 
   display: flex;
   align-items: center;
@@ -19,24 +20,24 @@ export const HeaderContent = styled.div`
   > a {
     font-size: 3.2rem;
     font-weight: bold;
-    color: ${(props) => props.theme['gray-100']};
+    color: ${({ theme }) => theme['gray-100']};
   }
 
   > ul {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.6rem;
 
     li {
       a {
         font-size: 1.4rem;
 
-        color: ${(props) => props.theme['gray-500']};
+        color: ${({ theme }) => theme['gray-400']};
         letter-spacing: 1.2px;
         text-transform: uppercase;
 
         &:hover {
-          color: ${(props) => props.theme['gray-200']};
+          color: ${({ theme }) => theme['gray-100']};
           transition: 0.2s;
         }
       }
