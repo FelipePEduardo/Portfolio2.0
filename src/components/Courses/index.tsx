@@ -8,7 +8,7 @@ import { ChevronDownIcon } from '@radix-ui/react-icons'
 
 export function Courses() {
   return (
-    <AccordionRoot type="single" defaultValue="item-1" collapsible>
+    <AccordionRoot type="single" collapsible>
       <AccordionItem value="item-1">
         <AccordionTrigger>
           Ignite - Rocketseat
