@@ -33,7 +33,7 @@ export function About() {
               Minha conexão com desenvolvimento começou pelo Discover da{' '}
               <em>Rocketseat</em>, migrei para o Explorer onde pude me desafiar
               ainda mais e logo depois ganhei uma bolsa para cursar o{' '}
-              <em>Ignite</em> onde estudo atualmente tenho o foco em{' '}
+              <em>Ignite</em> onde estudo atualmente e tenho o foco em{' '}
               <strong>Desenvolvimento Front-End</strong> com <em>ReactJS</em> .
               Busco me tornar um desenvolvedor Full-Stack.
             </p>
