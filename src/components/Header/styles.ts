@@ -65,39 +65,7 @@ export const MenuDesktop = styled.div`
 `
 
 export const MenuMobileContainer = styled.div`
-  position: relative;
-
   @media (min-width: 769px) {
     display: none;
-  }
-`
-
-export const Menu = styled.div`
-  position: relative;
-  width: 100%;
-  height: 3px;
-  background: ${(props) => props.theme['pink-200']};
-  border-radius: 4px;
-  transition: all 0.2s ease 0s;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    height: 3px;
-    background: ${(props) => props.theme['pink-200']};
-    border-radius: inherit;
-    transition: inherit;
-    transform-origin: 50% 50%;
-  }
-
-  &::before {
-    top: 7px;
-  }
-
-  &::after {
-    top: -7px;
   }
 `

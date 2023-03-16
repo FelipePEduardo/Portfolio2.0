@@ -80,6 +80,11 @@ export const MenuMobileContent = styled(DropdownMenu.Content)`
       transform: translateY(0);
     }
   }
+
+  @media (min-width: 768px) {
+    display: none;
+    visibility: hidden;
+  }
 `
 
 export const MenuMobileArrow = styled(DropdownMenu.Arrow)`
