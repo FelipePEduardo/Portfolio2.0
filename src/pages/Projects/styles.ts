@@ -30,9 +30,14 @@ export const ProjetcsContent = styled.section`
   }
 
   > p {
-    color: ${({ theme }) => theme['gray-100']};
+    color: ${({ theme }) => theme['gray-200']};
 
     margin-bottom: 3rem;
+
+    span {
+      color: ${({ theme }) => theme.white};
+      font-size: 1.8rem;
+    }
   }
 
   > div:last-child {

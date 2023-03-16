@@ -20,7 +20,7 @@ export function Projects() {
     const response = await api.get('repos', {
       params: {
         sort: 'pushed',
-        per_page: 8,
+        per_page: 10,
       },
     })
 
@@ -38,8 +38,8 @@ export function Projects() {
           <h1>Projetos</h1>
         </div>
         <p>
-          Essa página lista os 8 principais projetos que venho desenvolvendo
-          durante a minha jornada como desenvolvedor.
+          Essa página lista os <span>10</span> principais projetos que venho
+          desenvolvendo durante a minha jornada como desenvolvedor.
         </p>
 
         <div>
