@@ -56,7 +56,8 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
-  .hide {
-    display: none;
+  :focus {        
+    outline: 0; 
+    box-shadow: 0 0 0 2px ${({ theme }) => theme['violet-700']};
   }
 `

@@ -1,5 +1,11 @@
-import { HeaderContainer, HeaderContent } from './styles'
+import {
+  HeaderContainer,
+  HeaderContent,
+  MenuMobileContainer,
+  MenuDesktop,
+} from './styles'
 import { NavLink } from 'react-router-dom'
+import { MenuMobile } from '../MenuOpen'
 
 export function Header() {
   return (
@@ -7,17 +13,23 @@ export function Header() {
       <HeaderContent>
         <NavLink to="/">&lt;Portfolio /&gt;</NavLink>
 
-        <ul>
-          <li>
-            <NavLink to="/sobre">Sobre</NavLink>
-          </li>
-          <li>
-            <NavLink to="/habilidades">Habilidades</NavLink>
-          </li>
-          <li>
-            <NavLink to="/projetos">Projetos</NavLink>
-          </li>
-        </ul>
+        <MenuDesktop>
+          <ul>
+            <li>
+              <NavLink to="/sobre">Sobre</NavLink>
+            </li>
+            <li>
+              <NavLink to="/habilidades">Habilidades</NavLink>
+            </li>
+            <li>
+              <NavLink to="/projetos">Projetos</NavLink>
+            </li>
+          </ul>
+        </MenuDesktop>
+
+        <MenuMobileContainer>
+          <MenuMobile />
+        </MenuMobileContainer>
       </HeaderContent>
     </HeaderContainer>
   )

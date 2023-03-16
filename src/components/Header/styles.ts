@@ -23,6 +23,16 @@ export const HeaderContent = styled.div`
     color: ${({ theme }) => theme['gray-100']};
   }
 
+  @media (max-width: 768px) {
+    padding: 3rem 4rem;
+
+    > a {
+      font-size: 2.4rem;
+    }
+  }
+`
+
+export const MenuDesktop = styled.div`
   > ul {
     display: flex;
     align-items: center;
@@ -40,30 +50,54 @@ export const HeaderContent = styled.div`
           color: ${({ theme }) => theme['gray-100']};
           transition: 0.2s;
         }
+
+        &[aria-pressed='true'] {
+          color: ${({ theme }) => theme['gray-100']};
+        }
       }
     }
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 1rem;
+    display: none;
+    visibility: hidden;
+  }
+`
 
-    padding: 2rem 0;
+export const MenuMobileContainer = styled.div`
+  position: relative;
 
-    > a {
-      font-size: 2.8rem;
-    }
+  @media (min-width: 769px) {
+    display: none;
+  }
+`
 
-    > ul {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
+export const Menu = styled.div`
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background: ${(props) => props.theme['pink-200']};
+  border-radius: 4px;
+  transition: all 0.2s ease 0s;
 
-      li {
-        a {
-          font-size: 1.3rem;
-        }
-      }
-    }
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    height: 3px;
+    background: ${(props) => props.theme['pink-200']};
+    border-radius: inherit;
+    transition: inherit;
+    transform-origin: 50% 50%;
+  }
+
+  &::before {
+    top: 7px;
+  }
+
+  &::after {
+    top: -7px;
   }
 `

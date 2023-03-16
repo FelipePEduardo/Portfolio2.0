@@ -11,6 +11,21 @@ export const AboutContent = styled.section`
   max-width: 76rem;
   margin: 0 auto;
 
+  h1 {
+    text-align: center;
+    font-size: 3.2rem;
+
+    margin-bottom: 4rem;
+
+    background-image: linear-gradient(60deg, #80ffea, #d49ef5);
+    background-clip: text;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
   > h2 {
     margin-top: 4rem;
     margin-bottom: 1.5rem;
@@ -32,23 +47,6 @@ export const AboutContent = styled.section`
     blockquote {
       max-width: none;
     }
-  }
-`
-
-export const BackgroundTitle = styled.div`
-  background-image: linear-gradient(60deg, #80ffea, #d49ef5);
-  background-clip: text;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-
-  h1 {
-    text-align: center;
-    font-size: 3.2rem;
-
-    margin-bottom: 4rem;
   }
 `
 

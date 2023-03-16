@@ -47,7 +47,11 @@ export const TextContainer = styled.div`
     margin-bottom: 0.8rem;
   }
 
-  > div {
+  h1 {
+    font-size: 4.8rem;
+    color: ${({ theme }) => theme['gray-200']};
+    line-height: 160%;
+
     background-image: linear-gradient(60deg, #7938b2, #d49ef5);
     background-clip: text;
     background-size: 100%;
@@ -56,13 +60,24 @@ export const TextContainer = styled.div`
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 
-    h1 {
-      font-size: 4.8rem;
-      color: ${({ theme }) => theme['gray-200']};
-    }
+    animation: bottomToTop 1.2s ease-in-out;
   }
 
   p {
     font-size: 2rem;
+    animation: bottomToTop 1.2s ease-in-out;
+    animation-delay: 150ms;
+  }
+
+  @keyframes bottomToTop {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 `
